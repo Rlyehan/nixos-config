@@ -68,6 +68,9 @@
     curl
     git # used by nix flakes
     git-lfs # used by huggingface models
+    gh
+    neofetch
+    lazygit
 
     # create a fhs environment by command `fhs`, so we can run non-nixos packages in nixos!
     (
