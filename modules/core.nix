@@ -58,6 +58,9 @@
   # set user's default shell system-wide
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
+  programs.starship = {
+    enable = true;
+    };
   
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -71,6 +74,8 @@
     gh
     neofetch
     lazygit
+    ueberzug
+    libgccjit
 
     # create a fhs environment by command `fhs`, so we can run non-nixos packages in nixos!
     (
@@ -111,12 +116,6 @@
   # replace default editor with neovim
   environment.variables.EDITOR = "nvim";
 
-  virtualisation.docker = {
-    enable = true;
-    # start dockerd on boot.
-    # This is required for containers which are created with the `--restart=always` flag to work.
-    enableOnBoot = true;
-  };
     services = {
     # Enable CUPS to print documents.
     printing.enable = true;
