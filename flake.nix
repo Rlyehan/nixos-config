@@ -1,5 +1,5 @@
 {
-  description = "NixOS";
+  description = "NixOS flae";
 
   outputs = inputs @ {
     self,
@@ -24,7 +24,7 @@
         ./hosts
         ./modules/hyprland.nix
       ];
-      home-module = import ./home/hyprland-desktop.nix;
+      home-module = import ./home/default.nix;
     };
 
     x64_specialArgs =
