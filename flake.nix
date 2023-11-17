@@ -1,5 +1,5 @@
 {
-  description = "NixOS flae";
+  description = "NixOS flake";
 
   outputs = inputs @ {
     self,
