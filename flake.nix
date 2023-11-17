@@ -24,7 +24,7 @@
         ./hosts
         ./modules/hyprland.nix
       ];
-      home-module = import ./home/base/linux/desktop-hyprland.nix;
+      home-module = import ./home/programs/hyprland-desktop.nix;
     };
 
     x64_specialArgs =
