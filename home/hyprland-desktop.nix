@@ -1,7 +1,7 @@
 { username, ... }: {
   imports = [
     ./programs
-    ./programs/destop
+    ./programs/desktop
     ./programs/hyprland
   ];
 
