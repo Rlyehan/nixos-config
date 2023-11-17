@@ -52,7 +52,6 @@
         hidpi = true;
       };
     
-      nvidiaPatches = true;
     };
 
     # monitor backlight control
