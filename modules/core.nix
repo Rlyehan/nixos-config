@@ -152,10 +152,10 @@
   # all fonts are linked to /nix/var/nix/profiles/system/sw/share/X11/fonts
   fonts = {
     # use fonts specified by user rather than default ones
-    enableDefaultPackages = false;
+    enableDefaultFonts = false;
     fontDir.enable = true;
 
-    packages = with pkgs; [
+    fonts = with pkgs; [
       # icon fonts
       material-design-icons
       font-awesome
