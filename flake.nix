@@ -1,4 +1,4 @@
-{release-23.11
+{
   description = "NixOS flake";
 
   outputs = inputs @ {
