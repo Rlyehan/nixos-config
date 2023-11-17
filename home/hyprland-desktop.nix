@@ -1,6 +1,8 @@
 { username, ... }: {
   imports = [
     ./programs
+    .programs/destop
+    .programs/hyprland
   ];
 
   # Home Manager needs a bit of information about you and the
