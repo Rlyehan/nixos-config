@@ -58,7 +58,7 @@
   # set user's default shell system-wide
   programs.zsh = {
     enable = true;
-    enableAutosuggestions = true;
+    autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
   };
   users.defaultUserShell = pkgs.zsh;
