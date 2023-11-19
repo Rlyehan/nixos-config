@@ -110,10 +110,10 @@
     ########################  Color Schemes  #########################################
 
     # color scheme - catppuccin
-    catppuccin-hyprland = {
-      url = "github:catppuccin/hyprland";
-      flake = false;
-  };
+  #   catppuccin-hyprland = {
+  #     url = "github:catppuccin/hyprland";
+  #     flake = false;
+  # };
   };
   # the nixConfig here only affects the flake itself, not the system configuration!
   nixConfig = {
