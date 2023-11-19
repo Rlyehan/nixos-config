@@ -114,7 +114,7 @@
       url = "github:catppuccin/hyprland";
       flake = false;
   };
-
+  };
   # the nixConfig here only affects the flake itself, not the system configuration!
   nixConfig = {
     experimental-features = ["nix-command" "flakes"];
