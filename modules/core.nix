@@ -58,10 +58,9 @@
   # set user's default shell system-wide
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
-  programs.starship = {
-    enable = true;
-    settings = pkgs.lib.importTOML ../starship.toml;
-    };
+  # programs.starship = {
+  #   enable = true;
+  #   };
   
   # List packages installed in system profile. To search, run:
   # $ nix search wget
