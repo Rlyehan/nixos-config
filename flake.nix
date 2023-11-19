@@ -126,10 +126,6 @@
       url = "github:catppuccin/alacritty";
       flake = false;
     };
-    catppuccin-wezterm = {
-      url = "github:catppuccin/wezterm";
-      flake = false;
-    };
     catppuccin-helix = {
       url = "github:catppuccin/helix";
       flake = false;
