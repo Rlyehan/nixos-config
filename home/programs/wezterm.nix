@@ -2,7 +2,6 @@
   lib,
   pkgs,
   pkgs-unstable,
-  catppuccin-wezterm,
   ...
 }:
 ###########################################################
@@ -49,7 +48,7 @@
         end)
 
         -- This is where you actually apply your config choices
-        config.color_scheme = "Catppuccin Mocha"
+        config.color_scheme = "Tokyo Night"
         config.font = wezterm.font("JetBrainsMono Nerd Font")
         config.hide_tab_bar_if_only_one_tab = true
         config.scrollback_lines = 10000
