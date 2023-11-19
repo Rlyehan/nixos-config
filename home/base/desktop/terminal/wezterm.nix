@@ -12,10 +12,6 @@
 #
 ###########################################################
 {
-  # wezterm has catppuccin theme built-in,
-  # it's not necessary to install it separately.
-  # xdg.configFile."wezterm/colors".source = "${catppuccin-wezterm}/dist";
-
   programs.wezterm = {
     enable = true;
     package = pkgs-unstable.wezterm;

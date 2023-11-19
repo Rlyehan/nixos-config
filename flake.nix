@@ -105,6 +105,14 @@
       url = "github:nix-community/nixos-generators";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+
+    ########################  Color Schemes  #########################################
+
+    # color scheme - catppuccin
+    catppuccin-hyprland = {
+      url = "github:catppuccin/hyprland";
+      flake = false;
   };
 
   # the nixConfig here only affects the flake itself, not the system configuration!
