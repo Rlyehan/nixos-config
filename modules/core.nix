@@ -56,9 +56,13 @@
     zsh
   ];
   # set user's default shell system-wide
-  programs.zsh.enable = true;
+  programs.zsh = {
+    enable = true;
+    enableAutosuggestions = true;
+    syntaxHighlighting.enable = true;
+  };
   users.defaultUserShell = pkgs.zsh;
-  #programs.starship.enable = true;
+
 
   
   # List packages installed in system profile. To search, run:
