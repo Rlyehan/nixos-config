@@ -18,7 +18,7 @@
 
     extraConfig = 
       let
-        fontsize = "13.0";
+        fontsize = "14.0";
       in
       ''
         -- Pull in the wezterm API
