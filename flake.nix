@@ -130,10 +130,6 @@
       url = "github:catppuccin/helix";
       flake = false;
     };
-    catppuccin-starship = {
-      url = "github:catppuccin/starship";
-      flake = false;
-    };
     catppuccin-hyprland = {
       url = "github:catppuccin/hyprland";
       flake = false;

@@ -60,6 +60,7 @@
   users.defaultUserShell = pkgs.zsh;
   programs.starship = {
     enable = true;
+    settings = pkgs.lib.importTOML ../starship.toml;
     };
   
   # List packages installed in system profile. To search, run:
