@@ -6,12 +6,14 @@
   transition-property: background-color;
   transition-duration: 0.5s;
 }
+
 @keyframes blink_red {
   to {
-    background-color: rgb(242, 143, 173);
-    color: rgb(26, 24, 38);
+    background-color: #7aa2f7; /* Light blue for blink animation */
+    color: #1a1b26; /* Dark background color */
   }
 }
+
 .warning,
 .critical,
 .urgent {
@@ -21,66 +23,62 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
 window#waybar {
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  text-shadow: none;
-  transition-duration: 0s;
-  color: rgba(217, 216, 216, 1);
-  background: #1a1b26; 
-}
-#workspaces {
-  margin: 0 5px;
-}
-#workspaces button {
-  padding: 0 8px;
-  color: #565f89;
-  border: 3px solid rgba(9, 85, 225, 0);
-  border-radius: 10px;
-  min-width: 33px;
-}
-#workspaces button.visible {
-  color: #a9b1d6;
+  background-color: transparent;
 }
 
-#workspaces button.focused {
-  border-top: 3px solid #7aa2f7;
-  border-bottom: 3px solid #7aa2f7;
+window > box {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  background-color: #1a1b26; /* Dark blue background */
+  padding: 3px;
+  padding-left: 8px;
+  border: 2px none #33ccff;
+}
+
+#workspaces {
+  padding-left: 0px;
+  padding-right: 4px;
+}
+
+#workspaces button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+#workspaces button.active {
+  background-color: #bb9af7; /* Light purple for active workspace */
+  color: #1a1b26;
 }
 
 #workspaces button.urgent {
-  background-color: #a96d1f;
-  color: white;
+  color: #f7768e; /* Pink for urgent */
 }
 
 #workspaces button:hover {
-  box-shadow: inherit;
-  border-color: #bb9af7;
-  color: #bb9af7;
-}
-
-/* Repeat style here to ensure properties are overwritten as there's no !important and button:hover above resets the colour */
-
-#workspaces button.focused {
-  color: #7aa2f7;
-}
-#workspaces button.focused:hover {
-  color: #bb9af7;
+  background-color: #7dcfff; /* Light blue for hover */
+  color: #1a1b26;
 }
 
 tooltip {
-  background: rgb(48, 45, 65);
+  background: #444b6a; /* Darker shade for tooltip */
 }
+
 tooltip label {
-  color: rgb(217, 224, 238);
+  color: #a9b1d6; /* Lighter text for readability */
 }
+
 #custom-launcher {
   font-size: 20px;
   padding-left: 8px;
   padding-right: 6px;
-  color: #7ebae4;
+  color: #7aa2f7; /* Light blue */
 }
+
 #mode,
 #clock,
 #memory,
@@ -99,47 +97,60 @@ tooltip label {
 }
 
 #memory {
-  color: rgb(45, 52, 116);
+  color: #bb9af7; /* Light purple */
 }
+
 #cpu {
-  color: rgb(124, 102, 204);
+  color: #9ece6a; /* Light green */
 }
+
 #clock {
-  color: rgb(76, 86, 106);
+  color: #a9b1d6; /* Light grey-blue */
 }
+
 #custom-wall {
-  color: rgb(0, 150, 136);
+  color: #7aa2f7; /* Light blue */
 }
+
 #temperature {
-  color: rgb(29, 78, 216);
+  color: #f7768e; /* Pink */
 }
+
 #backlight {
-  color: rgb(204, 107, 92);
+  color: #7dcfff; /* Light blue */
 }
+
 #pulseaudio {
-  color: rgb(237, 66, 69);
+  color: #e0af68; /* Light orange */
 }
+
 #network {
-  color: rgb(80, 161, 79);
+  color: #73daca; /* Teal */
 }
+
 #network.disconnected {
-  color: rgb(156, 157, 158);
+  color: rgb(255, 255, 255); /* White for disconnected */
 }
+
 #custom-powermenu {
-  color: rgb(191, 97, 106);
+  color: #bb9af7; /* Light purple */
   padding-right: 8px;
 }
+
 #tray {
   padding-right: 8px;
   padding-left: 10px;
 }
+
 #mpd.paused {
-  color: #414868;
+  color: #414868; /* Dark blue-grey */
   font-style: italic;
 }
+
 #mpd.stopped {
   background: transparent;
 }
+
 #mpd {
-  color: #c0caf5;
+  color: #c0caf5; /* Light blue */
 }
