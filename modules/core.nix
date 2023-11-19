@@ -58,10 +58,8 @@
   # set user's default shell system-wide
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
-  programs.starship = {
-    enable = true;
-    };
-  
+  # programs.starship.enable = true;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
