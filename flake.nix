@@ -105,43 +105,6 @@
       url = "github:nix-community/nixos-generators";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-
-    ########################  Color Schemes  #########################################
-
-    # color scheme - catppuccin
-    catppuccin-btop = {
-      url = "github:catppuccin/btop";
-      flake = false;
-    };
-    catppuccin-fcitx5 = {
-      url = "github:catppuccin/fcitx5";
-      flake = false;
-    };
-    catppuccin-bat = {
-      url = "github:catppuccin/bat";
-      flake = false;
-    };
-    catppuccin-alacritty = {
-      url = "github:catppuccin/alacritty";
-      flake = false;
-    };
-    catppuccin-helix = {
-      url = "github:catppuccin/helix";
-      flake = false;
-    };
-    catppuccin-hyprland = {
-      url = "github:catppuccin/hyprland";
-      flake = false;
-    };
-    catppuccin-cava = {
-      url = "github:catppuccin/cava";
-      flake = false;
-    };
-    cattppuccin-k9s = {
-      url = "github:catppuccin/k9s";
-      flake = false;
-    };
   };
 
   # the nixConfig here only affects the flake itself, not the system configuration!
