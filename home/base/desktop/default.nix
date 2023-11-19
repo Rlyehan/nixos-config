@@ -3,6 +3,6 @@
     ./terminal
     ./core.nix
     ./git.nix
-    #./starship.nix
+    ./starship.nix
    ];
    }
