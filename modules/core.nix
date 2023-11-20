@@ -72,12 +72,10 @@
     wget
     zsh
     curl
-    git # used by nix flakes
-    git-lfs # used by huggingface models
-    gh
+    git
+    git-lfs
     neofetch
     lazygit
-    ueberzug
     libgccjit
 
     # create a fhs environment by command `fhs`, so we can run non-nixos packages in nixos!

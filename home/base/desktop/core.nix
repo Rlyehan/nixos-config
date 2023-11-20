@@ -10,7 +10,6 @@
     ripgrep
     which
     file
-    glow
     ];
 
   programs = {
