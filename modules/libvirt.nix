@@ -23,7 +23,7 @@
     qemu_full
   ];
 
-  boot.kernelModules = "kvm-amd";
+  boot.kernelModules = ["kvm-amd"];
   # Enable nested virsualization, required by security containers and nested vm.
   boot.extraModprobeConfig = "options kvm_amd nested=1";  # for amd cpu
 }
