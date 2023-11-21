@@ -1,9 +1,6 @@
 { username, ... }: {
   imports = [
     ../programs
-
-    ./desktop
-
     ./hyprland
   ];
 
