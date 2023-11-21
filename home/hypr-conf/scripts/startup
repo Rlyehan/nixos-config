@@ -3,7 +3,7 @@
 ## Autostart Programs
 
 # Kill already running process
-_ps=(waybar mako mpd)
+_ps=(waybar mako)
 for _prs in "${_ps[@]}"; do
 	if [[ $(pidof ${_prs}) ]]; then
 		killall -9 ${_prs}
@@ -18,6 +18,3 @@ swaybg --output '*' --mode fill --image ~/Pictures/lowpoly_street.png &
 
 # Lauch statusbar (waybar)
 ~/.config/hypr/scripts/statusbar &
-
-# Start mpd
-exec mpd &

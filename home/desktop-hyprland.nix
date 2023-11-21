@@ -9,9 +9,9 @@
     username = "max";
     homeDirectory = "/home/max";
 
+    # Tis is not workign correctly for some reason
     file.".config/hypr" = {
     source = ./hypr-conf;
-    # copy the scripts directory recursively
     recursive = true;
     };
 

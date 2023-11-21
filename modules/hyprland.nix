@@ -65,10 +65,6 @@
 
     yad # a fork of zenity, for creating dialogs
 
-    # audio
-    mpd # for playing system sounds
-    mpc-cli # command-line mpd client
-    ncmpcpp # a mpd client with a UI
     networkmanagerapplet # provide GUI app: nm-connection-editor
 
     xfce.thunar # xfce4's file manager

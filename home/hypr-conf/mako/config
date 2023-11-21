@@ -50,7 +50,3 @@ border-color=#f38ba8
 text-color=#f38ba8
 default-timeout=0
 
-[category=mpd]
-border-color=#f9e2af
-default-timeout=2000
-group-by=category
