@@ -1,17 +1,4 @@
 {pkgs, hyprland, ...}: {
-  ##########################################################################################################
-  #
-  #  NixOS's Configuration for Hyprland Window Manager
-  #
-  #    i3wm: old and stable, only support X11
-  #    sway: compatible with i3wm, support Wayland. do not support Nvidia GPU officially.
-  #    hyprland: project starts from 2022, support Wayland, envolving fast, good looking, support Nvidia GPU.
-  #
-  ##########################################################################################################
-
-  imports = [
-     # hyprland.nixosModules.default
-  ];
 
   xdg.portal = {
     enable = true;
@@ -51,8 +38,6 @@
         enable = true;
         hidpi = true;
       };
-    
-      nvidiaPatches = true;
     };
 
     # monitor backlight control
@@ -74,19 +59,13 @@
     swaylock # locking the screen
     wlogout # logout menu
     wl-clipboard # copying and pasting
-    hyprpicker  # color picker
-
-    wf-recorder # creen recording
     grim # taking screenshots
-    slurp # selecting a region to screenshot
-    # TODO replace by `flameshot gui --raw | wl-copy`
 
     mako # the notification daemon, the same as dunst
 
     yad # a fork of zenity, for creating dialogs
 
     # audio
-    alsa-utils # provides amixer/alsamixer/...
     mpd # for playing system sounds
     mpc-cli # command-line mpd client
     ncmpcpp # a mpd client with a UI
