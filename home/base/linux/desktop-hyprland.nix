@@ -1,6 +1,6 @@
 { username, ... }: {
   imports = [
-    ../desktop
+    ../programs
 
     ./desktop
 
