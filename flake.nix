@@ -18,13 +18,12 @@
 
     nixosSystem = import ./lib/nixosSystem.nix;
 
-
     modules_hyprland = {
       nixos-modules = [
         ./hosts
         ./modules/hyprland.nix
       ];
-      home-module = import ./home/desktop-hyprland.nix;
+      home-module = import ./home/home.nix;
     };
 
     x64_specialArgs =
@@ -105,15 +104,6 @@
       url = "github:nix-community/nixos-generators";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-
-    ########################  Color Schemes  #########################################
-
-    # color scheme - catppuccin
-  #   catppuccin-hyprland = {
-  #     url = "github:catppuccin/hyprland";
-  #     flake = false;
-  # };
   };
   # the nixConfig here only affects the flake itself, not the system configuration!
   nixConfig = {

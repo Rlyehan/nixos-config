@@ -7,7 +7,7 @@
     ../modules/fhs-fonts.nix
     ../modules/libvirt.nix
     ../modules/core.nix
-    ../modules/user-group.nix
+    ./user-group.nix
   ];
 
 
