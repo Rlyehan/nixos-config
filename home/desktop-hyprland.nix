@@ -1,6 +1,7 @@
 { username, hyprland, ... }: {
   imports = [
     ./programs
+    ./hyprland
   ];
 
   # Home Manager needs a bit of information about you and the
@@ -8,12 +9,6 @@
   home = {
     username = "max";
     homeDirectory = "/home/max";
-
-    # Tis is not workign correctly for some reason
-    file.".config/hypr" = {
-    source = ./hypr-conf;
-    recursive = true;
-    };
 
     stateVersion = "23.05";
   };
