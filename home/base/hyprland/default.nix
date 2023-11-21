@@ -3,7 +3,6 @@
     # hyprland.homeManagerModules.default
 
     ./anyrun.nix
-    ./wayland-apps.nix
   ];
 
   # wayland.windowManager.hyprland.enable = true;
