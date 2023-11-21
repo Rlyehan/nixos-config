@@ -1,8 +1,4 @@
-{pkgs, hyprland,  ...}: {
-  imports = [
-    ./anyrun.nix
-  ];
-
+{hyprland,  ...}: {
   # hyprland configs, based on https://github.com/notwidow/hyprland
   home.file.".config/hypr" = {
     source = ./hypr-conf;
