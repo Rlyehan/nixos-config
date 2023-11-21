@@ -1,23 +1,12 @@
-{pkgs, hyprland, catppuccin-hyprland, ...}: {
+{pkgs, hyprland,  ...}: {
   imports = [
-    # hyprland.homeManagerModules.default
-
     ./anyrun.nix
   ];
-
-  # wayland.windowManager.hyprland.enable = true;
 
   # hyprland configs, based on https://github.com/notwidow/hyprland
   home.file.".config/hypr" = {
     source = ./hypr-conf;
     # copy the scripts directory recursively
-    recursive = true;
-  };
-  #home.file.".config/hypr/themes".source = "${catppuccin-hyprland}/themes";
-
-  # music player - mpd
-  home.file.".config/mpd" = {
-    source = ./mpd;
     recursive = true;
   };
 
