@@ -1,9 +1,19 @@
 {pkgs, hyprland, catppuccin-hyprland, ...}: {
+  imports = [
+    ./anyrun.nix
+    ./wayland-apps.nix
+  ];
 
   # hyprland configs, based on https://github.com/notwidow/hyprland
   home.file.".config/hypr" = {
     source = ./hypr-conf;
     # copy the scripts directory recursively
+    recursive = true;
+  };
+
+  # music player - mpd
+  home.file.".config/mpd" = {
+    source = ./mpd;
     recursive = true;
   };
 
@@ -15,5 +25,4 @@
     "MOZ_ENABLE_WAYLAND" = "1"; # for firefox to run on wayland
     "MOZ_WEBRENDER" = "1";
   };
-
 }
